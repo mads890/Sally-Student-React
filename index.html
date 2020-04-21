@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React Resume</title>
+</head>
+<body>
+    <section id="introduction"></section>
+    <section id="contact"></section>
+    <section id="education"></section>
+    <section id="work"></section>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let intro = document.querySelector('#introduction');
+        let contact = document.querySelector('#contact');
+        let edu = document.querySelector('#education');
+        let work = document.querySelector('#work');
+
+        ReactDOM.render(
+            <div>
+            <header>
+            <h1>Sally Student</h1>
+            </header>
+            <main>
+                <p>Web Developer Extrordinaire</p>
+                <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally Student folding her arms"/>
+                <address>
+                    <p>Sally Anne Student</p>
+                    <p>123 Cherry lane</p>
+                    <p>New York, New York, 12345</p>
+                </address>
+            </main>
+            </div>,
+            intro
+        );
+
+        ReactDOM.render(
+            <div>
+            <header>
+                <h2>Contact me!</h2>
+            </header>
+            <main>
+                <p>Email me at <a href="mailto:sstudent@yahoo.com?subject=We love you, come work for us!">sstudent@yahoo.com</a></p>
+                <p>Call me at 203-555-5555</p>
+                <p>Find me on twitter: <a href="https://twitter.com/webdeveloperextrordinaire">@webdeveloperextrordinaire</a></p>
+            </main>
+            </div>,
+            contact
+        );
+
+        ReactDOM.render(
+            <div>
+            <header>
+                <h2>Education</h2>
+            </header>
+            <main>
+                <ul>
+                    <li>Highschool: Happy Hills High School</li>
+                    <li>Undergrad: Harvard</li>
+                    <li>Grad School: Princeton</li>
+                    <li>Boot Camp: Bloc</li>
+                </ul>
+            </main>
+            </div>,
+            edu
+        );
+
+        ReactDOM.render(
+            <div>
+            <header>
+                <h2>Employment History</h2>
+            </header>
+            <main>
+                <ul>
+                    <li><strong>Google</strong>:<em>Junior Web Developer</em> from 2000-2004<br/>I worked closely with my supervisor to hone my skills.</li>
+                    <li><strong>Generic Startup</strong>:<em>Junior Web Developer</em> from 2005-2008<br/>I worked with an awesome team who taught me a lot.</li>
+                    <li><strong>Fantastic Fortune 500</strong>:<em>Software Engineer</em> from 2008-2013<br/>I took on more responsibility and started working remotely.</li>
+                    <li><strong>Websites R Us</strong>:<em>Senior Web Developer</em> from 2013-2019<br/>I lead a team of developers doing awesome work.</li>
+                </ul>
+            </main>
+            </div>,
+            work
+        );
+        
+    </script>
+</body>
+</html>
